@@ -15,5 +15,9 @@ class Faculty:
     def assign_lecture(self):
         if self.can_accept_load():
             self.current_load += 1
+            return True
         else:
-            return "Maximum Load Reached"
+            return False
+    
+    def get_name(self):
+        return self.name
